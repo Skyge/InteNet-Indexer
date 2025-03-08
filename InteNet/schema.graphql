@@ -1,0 +1,20 @@
+type BNBBonding_Launched {
+  id: ID!
+  token: String!
+  name: String!
+  symbol: String!
+  totalSupply: BigInt!
+  creator: String!
+  pair: String!
+  locker: String!
+  description: String!
+  image: String!
+  twitter: String!
+  telegram: String!
+  farcaster: String!
+  website: String!
+  status: Int!
+  totalTokens: BigInt!
+  tokenType: BigInt!
+  timestamp: BigInt!
+}

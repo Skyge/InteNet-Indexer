@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=./node_modules/envio/evm.schema.json
+name: InteNet
+networks:
+- id: 56
+  start_block: 46854850
+  contracts:
+  - name: BNBBonding
+    address:
+    - 0x3c8c5Bf051bAAB96555E9260e744DEB2Fd469206
+    handler: src/EventHandlerBonding.ts
+    events:
+    - event: Launched(address indexed token, address indexed pair, uint256 totalTokens, uint8 tokenType, uint256 timestamp)
